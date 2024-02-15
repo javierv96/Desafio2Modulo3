@@ -10,9 +10,9 @@ function login(event) {
     validacionAsunto(asunto);
     validacionMensaje(mensaje);
 
-    if(expresionRegular.test(nombre) && expresionRegular.test(asunto) && expresionRegular.test(mensaje)){
+    if (expresionRegular.test(nombre) && expresionRegular.test(asunto) && expresionRegular.test(mensaje)) {
         document.querySelector(".resultado").innerHTML = "Mensaje enviado con éxito !!!";
-    }else{
+    } else {
         document.querySelector(".resultado").innerHTML = "";
     }
 

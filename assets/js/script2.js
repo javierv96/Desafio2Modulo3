@@ -5,28 +5,22 @@ let verde = document.getElementById('btn-4').style.backgroundColor;
 let celeste = document.getElementById('btn-5').style.backgroundColor;
 let violeta = document.getElementById('btn-6').style.backgroundColor;
 
-function colorRojo(event){
-    event.preventDefault();
+function colorRojo() {
     document.getElementById('caja').style.backgroundColor = rojo;
 }
-function colorNaranja(event){
-    event.preventDefault();
+function colorNaranja() {
     document.getElementById('caja').style.backgroundColor = naranja;
 }
-function colorAmarillo(event){
-    event.preventDefault();
+function colorAmarillo() {
     document.getElementById('caja').style.backgroundColor = amarillo;
 }
-function colorVerde(event){
-    event.preventDefault();
+function colorVerde() {
     document.getElementById('caja').style.backgroundColor = verde;
 }
-function colorCeleste(event){
-    event.preventDefault();
+function colorCeleste() {
     document.getElementById('caja').style.backgroundColor = celeste;
 }
-function colorVioleta(event){
-    event.preventDefault();
+function colorVioleta() {
     document.getElementById('caja').style.backgroundColor = violeta;
 }
 
