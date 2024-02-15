@@ -1,4 +1,4 @@
-let expresionRegular = /^[A-Za-z]+$/;
+let expresionRegular = /^[A-Za-zÁáÉéÍíÓóÚúÜüÑñ\s]+$/;
 
 function login(event) {
     event.preventDefault();
@@ -12,6 +12,8 @@ function login(event) {
 
     if(expresionRegular.test(nombre) && expresionRegular.test(asunto) && expresionRegular.test(mensaje)){
         document.querySelector(".resultado").innerHTML = "Mensaje enviado con éxito !!!";
+    }else{
+        document.querySelector(".resultado").innerHTML = "";
     }
 
 }
