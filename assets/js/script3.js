@@ -1,6 +1,6 @@
 let expresionRegular = /^[0-9]+(\.[0-9]+)?$/;
 
-function sumar() {
+const sumar = () => {
     let valor1 = document.getElementById('valor1').value;
     let valor2 = document.getElementById('valor2').value;
 
@@ -13,7 +13,7 @@ function sumar() {
     }
 }
 
-function restar() {
+const restar = () => {
     let valor1 = document.getElementById('valor1').value;
     let valor2 = document.getElementById('valor2').value;
 

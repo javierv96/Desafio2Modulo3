@@ -5,22 +5,22 @@ let verde = document.getElementById('btn-4').style.backgroundColor;
 let celeste = document.getElementById('btn-5').style.backgroundColor;
 let violeta = document.getElementById('btn-6').style.backgroundColor;
 
-function colorRojo() {
+const colorRojo = () => {
     document.getElementById('caja').style.backgroundColor = rojo;
 }
-function colorNaranja() {
+const colorNaranja = () => {
     document.getElementById('caja').style.backgroundColor = naranja;
 }
-function colorAmarillo() {
+const colorAmarillo = () => {
     document.getElementById('caja').style.backgroundColor = amarillo;
 }
-function colorVerde() {
+const colorVerde = () => {
     document.getElementById('caja').style.backgroundColor = verde;
 }
-function colorCeleste() {
+const colorCeleste = () => {
     document.getElementById('caja').style.backgroundColor = celeste;
 }
-function colorVioleta() {
+const colorVioleta = () => {
     document.getElementById('caja').style.backgroundColor = violeta;
 }
 

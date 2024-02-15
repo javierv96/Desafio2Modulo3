@@ -1,6 +1,6 @@
 let expresionRegular = /^[A-Za-zÁáÉéÍíÓóÚúÜüÑñ\s]+$/;
 
-function login(event) {
+const login = (event) => {
     event.preventDefault();
     let nombre = document.getElementById('nombre').value;
     let asunto = document.getElementById('asunto').value;
@@ -15,10 +15,9 @@ function login(event) {
     } else {
         document.querySelector(".resultado").innerHTML = "";
     }
-
 }
 
-function validacionNombre(nombre) {
+const validacionNombre = (nombre) => {
     if (nombre !== "") {
         if (expresionRegular.test(nombre)) {
             document.querySelector(".errorNombre").innerHTML = "";
@@ -31,7 +30,7 @@ function validacionNombre(nombre) {
     }
 }
 
-function validacionAsunto(asunto) {
+const validacionAsunto = (asunto) => {
     if (asunto !== "") {
         if (expresionRegular.test(asunto)) {
             document.querySelector(".errorAsunto").innerHTML = "";
@@ -44,7 +43,7 @@ function validacionAsunto(asunto) {
     }
 }
 
-function validacionMensaje(mensaje) {
+const validacionMensaje = (mensaje) => {
     if (mensaje !== "") {
         if (expresionRegular.test(mensaje)) {
             document.querySelector(".errorMensaje").innerHTML = "";
