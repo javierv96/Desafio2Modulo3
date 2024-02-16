@@ -1,4 +1,4 @@
-let expresionRegular = /^[A-Za-zÁáÉéÍíÓóÚúÜüÑñ\s]+$/;
+let expresionRegular = /^[A-Za-zÁáÉéÍíÓóÚúÜüÑñ\s]+$/i;
 
 const login = (event) => {
     event.preventDefault();
